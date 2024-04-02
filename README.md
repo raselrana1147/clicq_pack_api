@@ -1,5 +1,7 @@
 # Project Installation Steps
 
+ Required PHP 8.2.0 or greater.
+
 ### Step 1
 Clone project from master branch 
 
@@ -29,6 +31,21 @@ php artisan key:generat
 ```
 ### Step 6
 Open .env file and chanage DB_CONECTION sqlite to mysql
+
+Remove # comment from following line
+
+DB_HOST=127.0.0.1
+
+DB_PORT=3306
+
+DB_DATABASE=click_pack_backend
+
+DB_USERNAME=root
+
+DB_PASSWORD=
+
+Provide database credentials
+
 ### Step 7
 Add Migration file to database
 ```sh 
@@ -39,3 +56,5 @@ Run project
 ```sh 
 php artisan serve
 ```
+
+### After do these steps you have to install frotend project. Fromtend install processes are given in frontend repository 
